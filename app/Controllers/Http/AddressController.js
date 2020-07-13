@@ -13,7 +13,7 @@ class AddressController {
         customer_id: customer.id,
         street: addressData.street,
         state: addressData.state,
-        country: addressData.country        
+        country: addressData.country   
       })
 
       return response.json({

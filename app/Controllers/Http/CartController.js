@@ -95,9 +95,14 @@ class CartController {
 
   async checkout({auth, response, request}){
     const customer = auth.current.user
-    const {message, email} = request.only(['message', 'email'])
+    const {message} = request.only(['message'])
+    console.log(message)
+    // await Mail.raw('This is a test', (message) => {
+    //   message.to('ahmadjinadu@gmail.com')
+    //   message.subject('Order Confirmation')
+    // })
     if(await Mail.raw(message, (message) => {
-      message.to(email)
+      message.to('ahmadjinadu@gmail.com')
       message.subject('Order Confirmation')
     })){
       try{
