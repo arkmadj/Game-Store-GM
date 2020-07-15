@@ -7,6 +7,7 @@ class AddressController {
   async add({request, auth, response}){
     const customer = auth.current.user
     const addressData = request.only(['street', 'state', 'country'])
+    // this is a comment
     
     try{
       const address = await Address.create({

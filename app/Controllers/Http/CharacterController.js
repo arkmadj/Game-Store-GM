@@ -19,7 +19,7 @@ class CharacterController {
     }catch(error){
       return response.json({
         status: 'Error',
-        message: 'An error occurred.',
+        message: 'An error has occurred.',
         data: error
       })
     }
