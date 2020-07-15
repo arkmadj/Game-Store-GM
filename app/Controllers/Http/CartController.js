@@ -102,7 +102,7 @@ class CartController {
     //   message.subject('Order Confirmation')
     // })
     if(await Mail.raw(message, (message) => {
-      message.to('ahmadjinadu@gmail.com')
+      message.to(customer.email)
       message.subject('Order Confirmation')
     })){
       try{
