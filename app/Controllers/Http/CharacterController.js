@@ -13,7 +13,7 @@ class CharacterController {
 
       return response.json({
         status: 'Success',
-        message: 'Game character Created',
+        message: 'Game character has been Created',
         data: character
       })
     }catch(error){
