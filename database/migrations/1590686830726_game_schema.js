@@ -10,7 +10,7 @@ class GameSchema extends Schema {
       table.timestamps()
       table.string('title')
       table.string('platform')
-      table.text('main_description')
+      table.string('main_description')
       table.string('main_img')
       table.string('img_one')
       table.string('img_two')
