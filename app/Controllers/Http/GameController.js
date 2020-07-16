@@ -5,7 +5,7 @@ const Game = use('App/Models/Game')
 
 class GameController {
   async addGame({request, response}){
-    const gameData = request.only(['title', 'platform', 'main_description', 'main_img', 'img_one', 'img_two', 'img_three', 'main_theme', 'main_theme_description', 'price'])
+    const gameData = request.only(['title', 'platform', 'main_description', 'main_img', 'img_one', 'img_two', 'img_three', 'main_theme', 'main_title', 'main_theme_description', 'price'])
 
     try{
       const game = await Game.create(gameData)
