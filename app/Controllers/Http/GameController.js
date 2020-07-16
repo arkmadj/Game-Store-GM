@@ -11,7 +11,7 @@ class GameController {
       const game = await Game.create(gameData)
       return response.json({
         status: 'Success',
-        message: 'Game Created',
+        message: 'Game has been Created',
         data: game
       })
     }catch(error){
