@@ -107,7 +107,7 @@ class CustomerController {
     response,
     auth
   }) {
-    const customerData = request.only(['name', 'email', 'password', 'phone_no'])
+    const customerData = request.only(['name', 'email', 'password', 'phone_no', 'role'])
 
     try{
         const customer = await Customer.create(customerData)

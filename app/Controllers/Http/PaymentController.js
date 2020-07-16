@@ -37,7 +37,7 @@ class PaymentController {
   }
 
   async addItem({response, request}){
-    const paymentData = request.only(['name', 'type', 'description', 'img_src'])
+    const paymentData = request.only(['payment_name', 'type', 'description', 'img_src'])
     try{
       const payment = await Payment.create(paymentData)
       
