@@ -18,6 +18,7 @@ class GameSchema extends Schema {
       table.string('main_theme')
       table.string('main_theme_description')
       table.string('price')
+      table.string('main_title')
     })
   }
 
