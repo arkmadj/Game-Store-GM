@@ -123,6 +123,11 @@ class CartController {
           message: 'An Error occured.'
         })
       }
+    }else{
+      response.status(500).json({
+        status: 'Error',
+        message: 'An Error occured. Try again later'
+      })
     }
   }
 }
